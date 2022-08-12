@@ -22,7 +22,7 @@ public class Main {
         Queue<Person> queue = new LinkedList<>(generateClients());
         while (!queue.isEmpty()) {
             Person riding = queue.poll();
-            System.out.println(riding + " ïðîêàòèëñÿ íà àòòðàêöèîíå!");
+            System.out.println(riding + " Ð¿Ñ€Ð¾ÐºÐ°Ñ‚Ð¸Ð»ÑÑ Ð½Ð° Ð°Ñ‚Ñ‚Ñ€Ð°ÐºÑ†Ð¸Ð¾Ð½Ðµ!");
             int ticets = riding.wasted();
             if (ticets > 0) {
                 queue.offer(riding);
